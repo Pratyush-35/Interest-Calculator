@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interest Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for Graphs -->
 </head>
 <body>
     <div class="container">
@@ -37,6 +38,9 @@
         <button onclick="calculateInterest()">Calculate</button>
 
         <div id="result" class="result"></div>
+
+        <!-- Canvas for Graph -->
+        <canvas id="interestChart"></canvas>
     </div>
 
     <script src="scripts.js"></script>
