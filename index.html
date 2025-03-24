@@ -3,49 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interest Calculator - Simple & Compound Interest Finder</title>
+    <title>Simple & Compound Interest Calculator - Loan & Investment Interest</title>
 
-    <meta name="description" content="Calculate Simple and Compound Interest easily with our Interest Calculator. Get accurate results and a graphical representation of interest growth.">
-    <meta name="keywords" content="Interest Calculator, Simple Interest, Compound Interest, Finance Calculator, Loan Calculator, Interest Growth Chart">
+    <!-- ✅ SEO Meta Tags (With Finance Keywords) -->
+    <meta name="description" content="Use our free Interest Calculator to compute Simple & Compound Interest for loans, savings, and investments. Get accurate results with an interactive graph.">
+    <meta name="keywords" content="Simple Interest Calculator, Compound Interest Calculator, Loan Interest Calculator, Savings Interest, Investment Calculator, Banking Interest, EMI Calculator, Mortgage Interest, Financial Planning">
     <meta name="author" content="Pratyush">
 
-    <!-- Google Search Console Verification -->
+    <!-- ✅ Canonical Tag (Prevents duplicate URL issues) -->
+    <link rel="canonical" href="https://pratyush-35.github.io/Interest-Calculator/" />
+
+    <!-- ✅ Open Graph Meta Tags (For Social Media Sharing) -->
+    <meta property="og:title" content="Simple & Compound Interest Calculator - Loan & Investment Interest">
+    <meta property="og:description" content="Use our free Interest Calculator to compute Simple & Compound Interest for loans, savings, and investments. Get accurate results with an interactive graph.">
+    <meta property="og:image" content="https://pratyush-35.github.io/Interest-Calculator/images/preview.png"> <!-- Replace with an actual image URL -->
+    <meta property="og:url" content="https://pratyush-35.github.io/Interest-Calculator/">
+    <meta property="og:type" content="website">
+
+    <!-- ✅ Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simple & Compound Interest Calculator">
+    <meta name="twitter:description" content="Calculate loan interest, savings growth, and investment returns using our free online tool.">
+    <meta name="twitter:image" content="https://pratyush-35.github.io/Interest-Calculator/images/preview.png"> <!-- Replace with an actual image URL -->
+
+    <!-- ✅ Google Search Console Verification -->
     <meta name="google-site-verification" content="aBX15_MHR3D_huekKw0J04tH_I_-VPmkOmf7GSh9Dv0" />
+
+    <!-- ✅ Schema Markup (Structured Data for Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Simple & Compound Interest Calculator",
+      "url": "https://pratyush-35.github.io/Interest-Calculator/",
+      "description": "Use our free online calculator to compute Simple & Compound Interest for loans, savings, and investments. Get instant results with graphs.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Pratyush"
+      }
+    }
+    </script>
 
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Interest Calculator - Simple & Compound Interest</h1>
-        <h2>Find the interest amount and total sum easily</h2>
-        <h3>Instant results with interactive graphs</h3>
+        <h1>Interest Calculator - Loan & Investment Interest</h1>
+        <h2>Find loan interest, savings growth, and investment returns</h2>
+        <h3>Accurate calculations with interactive graphs</h3>
 
-        <label for="currency">Currency:</label>
+        <p>Use our free online interest calculator to compute *Simple and Compound Interest* for *loans, savings, and investments. Whether you are checking your **bank deposit growth, calculating **EMIs for a loan, or understanding **mortgage interest, this tool gives you **instant and accurate results*.</p>
+
+        <label for="currency">Select Currency:</label>
         <select id="currency">
-            <option value="₹">₹ (INR)</option>
-            <option value="$">$ (USD)</option>
-            <option value="€">€ (EUR)</option>
-            <option value="£">£ (GBP)</option>
-            <option value="¥">¥ (JPY)</option>
+            <option value="₹">₹ (INR) - Indian Rupee</option>
+            <option value="$">$ (USD) - US Dollar</option>
+            <option value="€">€ (EUR) - Euro</option>
+            <option value="£">£ (GBP) - British Pound</option>
+            <option value="¥">¥ (JPY) - Japanese Yen</option>
         </select>
 
         <label for="principal">Principal Amount:</label>
-        <input type="number" id="principal" placeholder="Enter amount">
+        <input type="number" id="principal" placeholder="Enter amount (e.g., loan, investment, deposit)">
 
         <label for="rate">Annual Interest Rate (%):</label>
-        <input type="number" id="rate" placeholder="Enter rate">
+        <input type="number" id="rate" placeholder="Enter interest rate (e.g., bank rates, loan rates)">
 
         <label for="time">Time Period (years):</label>
-        <input type="number" id="time" placeholder="Enter time">
+        <input type="number" id="time" placeholder="Enter duration (e.g., loan term, savings period)">
 
         <label for="type">Interest Type:</label>
         <select id="type">
-            <option value="simple">Simple Interest</option>
-            <option value="compound">Compound Interest</option>
+            <option value="simple">Simple Interest (Fixed Interest)</option>
+            <option value="compound">Compound Interest (Growing Interest)</option>
         </select>
 
-        <button onclick="calculateInterest()">Calculate</button>
+        <button onclick="calculateInterest()">Calculate Interest</button>
 
         <div id="result" class="result"></div>
 
