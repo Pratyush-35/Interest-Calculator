@@ -16,7 +16,7 @@
     <!-- ✅ Open Graph Meta Tags (For Social Media Sharing) -->
     <meta property="og:title" content="Simple & Compound Interest Calculator - Loan & Investment Interest">
     <meta property="og:description" content="Use our free Interest Calculator to compute Simple & Compound Interest for loans, savings, and investments. Get accurate results with an interactive graph.">
-    <meta property="og:image" content="https://pratyush-35.github.io/Interest-Calculator/images/preview.png"> <!-- Replace with an actual image URL -->
+    <meta property="og:image" content="https://pratyush-35.github.io/Interest-Calculator/images/preview.png">
     <meta property="og:url" content="https://pratyush-35.github.io/Interest-Calculator/">
     <meta property="og:type" content="website">
 
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Simple & Compound Interest Calculator">
     <meta name="twitter:description" content="Calculate loan interest, savings growth, and investment returns using our free online tool.">
-    <meta name="twitter:image" content="https://pratyush-35.github.io/Interest-Calculator/images/preview.png"> <!-- Replace with an actual image URL -->
+    <meta name="twitter:image" content="https://pratyush-35.github.io/Interest-Calculator/images/preview.png">
 
     <!-- ✅ Google Search Console Verification -->
     <meta name="google-site-verification" content="aBX15_MHR3D_huekKw0J04tH_I_-VPmkOmf7GSh9Dv0" />
@@ -76,8 +76,18 @@
         <label for="rate">Annual Interest Rate (%):</label>
         <input type="number" id="rate" placeholder="Enter interest rate (e.g., bank rates, loan rates)">
 
-        <label for="time">Time Period (years):</label>
+        <label for="time">Time Period:</label>
         <input type="number" id="time" placeholder="Enter duration (e.g., loan term, savings period)">
+
+        <label for="timeUnit">Time Period Unit:</label>
+        <select id="timeUnit">
+            <option value="yearly">Yearly</option>
+            <option value="half-yearly">Half-Yearly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+        </select>
 
         <label for="type">Interest Type:</label>
         <select id="type">
